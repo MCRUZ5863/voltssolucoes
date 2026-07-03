@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Volts Soluções em Elétrica - Serviços elétricos profissionais para empresas e residências. Profissionais certificados, preço justo.">
+    
+    <!-- Metatags para Redes Sociais e WhatsApp -->
+    <meta property="og:title" content="Volts Soluções em Elétrica">
+    <meta property="og:description" content="Serviços elétricos profissionais para empresas e residências.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/logo.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>Volts Soluções em Elétrica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=4">
+
+
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+
+    <div class="loader" id="loader">
+        <div class="loader__inner">
+            <svg class="loader__bolt" width="60" height="60" viewBox="0 0 24 24" fill="none">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="loader__text">VOLTS</span>
+        </div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="#home" class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+                <img src="img/logo2.png" alt="Volts Soluções" class="logo__icon">
+            </a>
+
+            <nav class="nav" id="nav">
+                <a href="#home" class="nav__link">Home</a>
+                <a href="#sobre" class="nav__link">Sobre</a>
+                <a href="#servicos" class="nav__link">Serviços</a>
+                <a href="#trabalho" class="nav__link">Nosso Trabalho</a>
+                <a href="#avaliacoes" class="nav__link">Avaliações</a>
+                <a href="#contato" class="nav__link">Contato</a>
+            </nav>
+
+            <div class="header__right">
+                <a href="https://wa.me/5519998885924" class="btn btn--primary btn--sm" target="_blank">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Fale Conosco
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero__grid">
+                <div class="hero__content">
+                    <div class="hero__tag" data-reveal>
+                        <span class="tag__dot"></span>
+                        Profissionais Certificados
+                    </div>
+                    <h1 class="hero__title" data-reveal>
+                        Energia que <br><span class="highlight">transforma</span> seu espaço
+                    </h1>
+                    <div class="hero__shape hero__shape--mobile" data-reveal>
+                        <svg viewBox="0 0 400 400" fill="none">
+                            <circle cx="200" cy="200" r="150" stroke="var(--primary)" stroke-width="1" opacity="0.2"/>
+                            <circle cx="200" cy="200" r="100" stroke="var(--primary)" stroke-width="1" opacity="0.15"/>
+                            <circle cx="200" cy="200" r="50" stroke="var(--primary)" stroke-width="2" opacity="0.4"/>
+                            <path d="M220 80L160 200H195L190 320L250 200H210L220 80Z" fill="var(--primary)" opacity="0.9"/>
+                        </svg>
+                    </div>
+                    <p class="hero__desc" data-reveal>
+                        Soluções elétricas completas com segurança, qualidade e preço justo. Atendemos residências, comércios e indústrias em Campinas e região.
+                    </p>
+                    <div class="hero__btns" data-reveal>
+                        <a href="https://wa.me/5519998885924?text=Ol%C3%A1%20estou%20no%20site%20da%20*Volts%20Solu%C3%A7%C3%B5es%20em%20El%C3%A9trica*!%20Preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre..." class="btn btn--primary btn--lg" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Solicitar Orçamento
+                        </a>
+                        <a href="#servicos" class="btn btn--ghost btn--lg">
+                            Ver Serviços
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero__visual">
+                    <div class="hero__orb hero__orb--1"></div>
+                    <div class="hero__orb hero__orb--2"></div>
+                    <div class="hero__orb hero__orb--3"></div>
+                    <div class="hero__shape" data-reveal>
+                        <svg viewBox="0 0 400 400" fill="none">
+                            <circle cx="200" cy="200" r="150" stroke="var(--primary)" stroke-width="1" opacity="0.2"/>
+                            <circle cx="200" cy="200" r="100" stroke="var(--primary)" stroke-width="1" opacity="0.15"/>
+                            <circle cx="200" cy="200" r="50" stroke="var(--primary)" stroke-width="2" opacity="0.4"/>
+                            <path d="M220 80L160 200H195L190 320L250 200H210L220 80Z" fill="var(--primary)" opacity="0.9"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__marquee">
+                <div class="marquee__track" id="marquee"></div>
+            </div>
+        </section>
+
+        <section class="sobre">
+            <div class="container">
+                <div class="sobre__layout">
+                    <div class="sobre__left" id="sobre">
+                        <span class="section-label" data-reveal>SOBRE NÓS</span>
+                        <h2 class="section-title" data-reveal>Qualidade que você pode <span class="highlight">confiar</span></h2>
+                    </div>
+                    <div class="sobre__right">
+                        <p data-reveal>A Volts Soluções em Elétrica é especializada em soluções completas para instalações elétricas. Com uma equipe de profissionais experientes e comprometidos, garantimos segurança, inovação e precisão em cada projeto.</p>
+                        <p data-reveal>Nosso objetivo é atender às necessidades de nossos clientes com excelência, proporcionando soluções técnicas adequadas e de confiança. Trabalhamos com dedicação para ser a melhor escolha no mercado de elétrica.</p>
+                        <div class="sobre__stats" data-reveal>
+                            <div class="stat-item">
+                                <span class="stat-item__num">500+</span>
+                                <span class="stat-item__label">Projetos Entregues</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-item__num">10+</span>
+                                <span class="stat-item__label">Anos de Experiência</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-item__num">100%</span>
+                                <span class="stat-item__label">Satisfação</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="servicos">
+            <div class="container">
+                <div class="servicos__header" id="servicos">
+                    <span class="section-label" data-reveal>SERVIÇOS</span>
+                    <h2 class="section-title" data-reveal>O que fazemos de <span class="highlight">melhor</span></h2>
+                </div>
+                <div class="servicos__grid">
+                    <article class="service" data-reveal>
+                        <div class="service__num">01</div>
+                        <div class="service__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        </div>
+                        <h3 class="service__title">Adequação Elétrica</h3>
+                        <p class="service__text">Atualizamos fiações, quadros e dispositivos para eliminar riscos e garantir conformidade com as normas de segurança.</p>
+                        <a href="https://wa.me/5519998885924?text=Ol%C3%A1%20estou%20no%20site%20da%20*Volts%20Solu%C3%A7%C3%B5es%20em%20El%C3%A9trica*!%20Preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20*Adequação%20Elétrica*" class="service__link" target="_blank">
+                            Saiba mais
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </article>
+
+                    <article class="service" data-reveal>
+                        <div class="service__num">02</div>
+                        <div class="service__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h.01M10 12h.01M14 12h.01M18 12h.01M8 10v4M12 10v4M16 10v4"/></svg>
+                        </div>
+                        <h3 class="service__title">Montagem de Painéis</h3>
+                        <p class="service__text">Montagem com precisão técnica, integrando componentes de última geração para um sistema confiável e seguro.</p>
+                        <a href="https://wa.me/5519998885924?text=Ol%C3%A1%20estou%20no%20site%20da%20*Volts%20Solu%C3%A7%C3%B5es%20em%20El%C3%A9trica*!%20Preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20*Montagem%20de%20Painéis*" class="service__link" target="_blank">
+                            Saiba mais
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </article>
+
+                    <article class="service" data-reveal>
+                        <div class="service__num">03</div>
+                        <div class="service__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        </div>
+                        <h3 class="service__title">Instalação Residencial</h3>
+                        <p class="service__text">Soluções completas para residências com foco em segurança, eficiência e conformidade com as normas vigentes.</p>
+                        <a href="https://wa.me/5519998885924?text=Ol%C3%A1%20estou%20no%20site%20da%20*Volts%20Solu%C3%A7%C3%B5es%20em%20El%C3%A9trica*!%20Preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20*Instalação%20Residencial*" class="service__link" target="_blank">
+                            Saiba mais
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </article>
+
+                    <article class="service" data-reveal>
+                        <div class="service__num">04</div>
+                        <div class="service__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v4M12 16h.01"/></svg>
+                        </div>
+                        <h3 class="service__title">Aterramento SPDA</h3>
+                        <p class="service__text">Sistemas de aterramento e proteção contra descargas atmosféricas em conformidade com normas técnicas.</p>
+                        <a href="https://wa.me/5519998885924?text=Ol%C3%A1%20estou%20no%20site%20da%20*Volts%20Solu%C3%A7%C3%B5es%20em%20El%C3%A9trica*!%20Preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20*Aterramento%20SPDA*" class="service__link" target="_blank">
+                            Saiba mais
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </article>
+
+                    <article class="service" data-reveal>
+                        <div class="service__num">05</div>
+                        <div class="service__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3 class="service__title">Instalação Comercial</h3>
+                        <p class="service__text">Projetos para ambientes comerciais e industriais, desde o planejamento até a execução e manutenção.</p>
+                        <a href="https://wa.me/5519998885924?text=Ol%C3%A1%20estou%20no%20site%20da%20*Volts%20Solu%C3%A7%C3%B5es%20em%20El%C3%A9trica*!%20Preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20*Instalação%20Comercial*" class="service__link" target="_blank">
+                            Saiba mais
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </article>
+
+                    <article class="service" data-reveal>
+                        <div class="service__num">06</div>
+                        <div class="service__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <h3 class="service__title">CFTV e Segurança</h3>
+                        <p class="service__text">Instalação de sistemas de monitoramento por câmeras com tecnologia de ponta e vigilância 24 horas.</p>
+                        <a href="https://wa.me/5519998885924?text=Ol%C3%A1%20estou%20no%20site%20da%20*Volts%20Solu%C3%A7%C3%B5es%20em%20El%C3%A9trica*!%20Preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20*CFTV*" class="service__link" target="_blank">
+                            Saiba mais
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </article>
+
+                    <article class="service service--featured" data-reveal>
+                        <div class="service__num">07</div>
+                        <div class="service__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="M12 6v6l4 2"/></svg>
+                        </div>
+                        <h3 class="service__title">Ar Condicionado</h3>
+                        <p class="service__text">Instalação de sistemas de refrigeração e ar condicionado com maximização de desempenho e economia.</p>
+                        <a href="https://wa.me/5519998885924?text=Ol%C3%A1%20estou%20no%20site%20da%20*Volts%20Solu%C3%A7%C3%B5es%20em%20El%C3%A9trica*!%20Preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20*Ar%20Condicionado*" class="service__link" target="_blank">
+                            Saiba mais
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="trabalho">
+            <div class="container">
+                <div class="trabalho__header" id="trabalho">
+                    <span class="section-label" data-reveal>PORTFÓLIO</span>
+                    <h2 class="section-title" data-reveal>Nosso <span class="highlight">trabalho</span> em ação</h2>
+                </div>
+                <div class="trabalho__grid" data-reveal>
+                    <div class="trabalho__item">
+                        <img src="img/servicos/adequacao.jpg" alt="Instalação Elétrica">
+                    </div>
+                    <div class="trabalho__item">
+                        <img src="img/servicos/paineis.jpg" alt="Painel Elétrico">
+                    </div>
+                    <div class="trabalho__item">
+                        <img src="img/servicos/residencial.jpg" alt="Iluminação">
+                    </div>
+                    <div class="trabalho__item">
+                        <img src="img/servicos/spda.jpg" alt="Cabeamento">
+                    </div>
+                    <div class="trabalho__item">
+                        <img src="img/servicos/comercial.jpg" alt="Aterramento">
+                    </div>
+                    <div class="trabalho__item">
+                        <img src="img/servicos/cftv.jpg" alt="Equipamentos de Segurança">
+                    </div>
+                    <div class="trabalho__item">
+                        <img src="img/servicos/ar.jpg" alt="Ar Condicionado">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="avaliacoes">
+            <div class="container">
+                <div class="avaliacoes__header" id="avaliacoes">
+                    <span class="section-label" data-reveal>AVALIAÇÕES</span>
+                    <h2 class="section-title" data-reveal>O que nossos clientes <span class="highlight">dizem</span></h2>
+                </div>
+                <div class="avaliacoes__grid">
+                    <div class="review" data-reveal>
+                        <div class="review__stars">★★★★★</div>
+                        <p class="review__text">"Excelente atendimento. O profissional foi muito educado e atencioso desde o primeiro contato, tentando nos orientar por telefone para que saíssemos do sufoco o quanto antes. O problema foi solucionado, eu indico muito a Volts."</p>
+                        <div class="review__author">
+                            <div class="review__avatar">D</div>
+                            <div>
+                                <strong>Dagmar Oliveira</strong>
+                                <span>Cliente verificada</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review" data-reveal>
+                        <div class="review__stars">★★★★★</div>
+                        <p class="review__text">"Excelente atendimento, profissional competente e muita dedicação ao trabalho. Educado e empenhado, rapidez e clareza no diagnóstico e na finalização. Parabéns!"</p>
+                        <div class="review__author">
+                            <div class="review__avatar">E</div>
+                            <div>
+                                <strong>Eliezer chave</strong>
+                                <span>Cliente verificado</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review" data-reveal>
+                        <div class="review__stars">★★★★★</div>
+                        <p class="review__text">"São muito competentes, o serviço foi realizado com muita qualidade e profissionalismo. Recomendo."</p>
+                        <div class="review__author">
+                            <div class="review__avatar">G</div>
+                            <div>
+                                <strong>Geferson Goncalves</strong>
+                                <span>Cliente verificado</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review" data-reveal>
+                        <div class="review__stars">★★★★★</div>
+                        <p class="review__text">"Liguei a geladeira na tomada e deu curto. Chegou cedo e resolveu meu problema. Qualidade, compromisso. Super indico o trabalho dele, super satisfeita e feliz!"</p>
+                        <div class="review__author">
+                            <div class="review__avatar">G</div>
+                            <div>
+                                <strong>Giulian Vitachi</strong>
+                                <span>Cliente verificada</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review" data-reveal>
+                        <div class="review__stars">★★★★★</div>
+                        <p class="review__text">"Foi excelente o atendimento da Volts Soluções em Elétrica. Inclusive em momento de emergência fomos prontamente atendidos. Serviço realizado com qualidade e eficiência."</p>
+                        <div class="review__author">
+                            <div class="review__avatar">E</div>
+                            <div>
+                                <strong>Eliana Nanci</strong>
+                                <span>Cliente verificada</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review" data-reveal>
+                        <div class="review__stars">★★★★★</div>
+                        <p class="review__text">"Super indico o serviço de ótima qualidade. São atenciosos, preço acessível, super educados, merece sim 5 estrelas até mais. Satisfeita, o problema foi resolvido rápido."</p>
+                        <div class="review__author">
+                            <div class="review__avatar">F</div>
+                            <div>
+                                <strong>Fatima Rodrigues</strong>
+                                <span>Cliente verificada</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="avaliacoes__cta" data-reveal>
+                    <a href="https://www.google.com/maps/place/Volts+Solu%C3%A7%C3%B5es+em+El%C3%A9trica/@-22.9726931,-47.1412716,17z/data=!4m8!3m7!1s0x94c8950e858d6ead:0x76ea4c8feeaf39ee!8m2!3d-22.9726931!4d-47.1386967!9m1!1b1!16s%2Fg%2F11q3s0xf6l?hl=pt-BR&entry=ttu&g_ep=EgoyMDI2MDYyMi4wIKXMDSoASAFQAw%3D%3D" class="btn btn--outline" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        Ver todas as avaliações no Google
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contato">
+            <div class="container">
+                <div class="contato__layout">
+                    <div class="contato__left" id="contato">
+                        <span class="section-label" data-reveal>CONTATO</span>
+                        <h2 class="section-title" data-reveal>Vamos começar seu <span class="highlight">projeto</span>?</h2>
+                        <p class="contato__desc" data-reveal>Entre em contato agora mesmo e solicite seu orçamento sem compromisso. Estamos prontos para atender você!</p>
+                        <div class="contato__channels">
+                            <a href="https://wa.me/5519998885924?text=Ol%C3%A1%20estou%20no%20site%20da%20*Volts%20Solu%C3%A7%C3%B5es%20em%20El%C3%A9trica*!%20Preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre..." class="channel" target="_blank" data-reveal>
+                                <div class="channel__icon channel__icon--wa">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                </div>
+                                <div>
+                                    <strong>WhatsApp</strong>
+                                    <span>(19) 99888-5924</span>
+                                </div>
+                                <svg class="channel__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                            <a href="tel:+5519998885924" class="channel" data-reveal>
+                                <div class="channel__icon channel__icon--phone">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                </div>
+                                <div>
+                                    <strong>Telefone</strong>
+                                    <span>(19) 99888-5924</span>
+                                </div>
+                                <svg class="channel__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                            <a href="https://www.instagram.com/voltseletrica22/" class="channel" target="_blank" data-reveal>
+                                <div class="channel__icon channel__icon--ig">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+                                </div>
+                                <div>
+                                    <strong>Instagram</strong>
+                                    <span>@voltseletrica22</span>
+                                </div>
+                                <svg class="channel__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contato__right">
+                        <div class="contato__card" data-reveal>
+                            <div class="contato__card-glow"></div>
+                            <svg class="contato__card-icon" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                            <h3>Pronto para começar?</h3>
+                            <p>Chame no WhatsApp e receba uma resposta rápida!</p>
+                            <a href="https://wa.me/5519998885924?text=Ol%C3%A1%20estou%20no%20site%20da%20*Volts%20Solu%C3%A7%C3%B5es%20em%20El%C3%A9trica*!%20Preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre..." class="btn btn--primary btn--lg" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                Chamar no WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <a href="#home" class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+                        <img src="img/logo2.png" alt="Volts Soluções" class="logo__icon">
+                    </a>
+                    <p>Soluções completas em elétrica para residências, empresas e indústrias.</p>
+                </div>
+                <div class="footer__links">
+                    <a href="#home">Home</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#trabalho">Trabalho</a>
+                    <a href="#contato">Contato</a>
+                </div>
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/voltseletrica22/" target="_blank" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/voltssolucoesemeletrica/" target="_blank" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="https://wa.me/5519998885924" target="_blank" aria-label="WhatsApp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Volts Soluções em Elétrica. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5519998885924?text=Ol%C3%A1%20estou%20no%20site%20da%20*Volts%20Solu%C3%A7%C3%B5es%20em%20El%C3%A9trica*!%20Preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre..." class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- Modal de Serviço Genérico -->
+    <div class="modal" id="serviceModal">
+        <div class="modal__overlay" id="modalOverlay"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3 class="modal__title" id="modalTitle">Título do Serviço</h3>
+                <button class="modal__close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal__body">
+                <img src="img/servicos/adequacao.jpg" alt="Serviço" class="modal__img" id="modalImg">
+                <div class="modal__desc-box">
+                    <p class="modal__desc" id="modalDesc">Descrição detalhada do serviço.</p>
+                </div>
+                <a href="" class="btn btn--primary btn--full" id="modalBtn" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Falar com Especialista
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="js/main.js?v=3"></script>
+</body>
+</html>
