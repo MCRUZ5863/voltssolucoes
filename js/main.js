@@ -221,14 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Populate modal
                 modalTitle.innerText = title;
-                modalDesc.innerText = text + ' Sua instalação elétrica está segura e dentro da norma?
-                A Adequação Elétrica é o processo de revisão e correção de toda a instalação para atender as exigências da NBR 5410 e NR-10. O objetivo é eliminar riscos, garantir o funcionamento correto e trazer conformidade legal para sua empresa.
-                Nosso serviço inclui:
-                Laudo e Diagnóstico Técnico: Inspeção completa para identificar não conformidades
-                - Correção de Falhas: Aterramento, dimensionamento de condutores, proteção contra sobrecarga
-                - Instalação de Dispositivos de Segurança: DR, DPS, sinalização e identificação
-                - Organização de Quadros: Limpeza, diagrama atualizado e padrão
-                - Emissão de Documentação: ART e Relatório Fotográfico. Nossa equipe está pronta para avaliar sua necessidade e propor a melhor solução técnica. Fale conosco para um orçamento sem compromisso!';
+                modalDesc.innerText = text + ' Nossa equipe está pronta para avaliar sua necessidade e propor a melhor solução técnica. Fale conosco para um orçamento sem compromisso!';
                 modalImg.src = serviceImages[index] || serviceImages[0];
                 modalBtn.href = originalHref;
 
